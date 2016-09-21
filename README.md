@@ -1,4 +1,4 @@
-### Skill based system for ROS (SkiROS) standard library from the RVMI lab, Aalborg University Copenhagen, Denmark
+### Skill based system for ROS (SkiROS) - simple UAV library from the RVMI lab, Aalborg University Copenhagen, Denmark
 
 [www.rvmi.aau.dk(RVMI webpage)](http://homes.m-tech.aau.dk/mrp/skiros/)
 
