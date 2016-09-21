@@ -1,0 +1,7 @@
+<library path="libsimple_uav_primitives">
+<class name="monitor_battery" type="skiros::module::MonitorBattery" base_class_type="skiros::ModuleBase">
+  <description>
+  Fake locate skill
+  </description>
+</class>
+</library>

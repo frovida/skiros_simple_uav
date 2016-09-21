@@ -1,0 +1,17 @@
+<library path="libsimple_uav_conditions">
+    <class name="uav:Landed" type="skiros::condition::Landed" base_class_type="skiros::condition::ConditionBase">
+      <description>
+       A condition
+      </description>
+    </class>
+    <class name="uav:Fly" type="skiros::condition::Fly" base_class_type="skiros::condition::ConditionBase">
+      <description>
+       A condition
+      </description>
+    </class>
+    <class name="uav:LowBattery" type="skiros::condition::LowBattery" base_class_type="skiros::condition::ConditionBase">
+      <description>
+       A condition
+      </description>
+    </class>
+</library>

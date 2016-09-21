@@ -1,0 +1,1361 @@
+<?xml version="1.0" ?>
+<world_state>
+    <!-- This file was generated from 'skiros_world_model/world_model.h' -->
+    <element id="0" type="Scene" label="/home/francesco/ros_ws/src/skiros_simple_uav/skiros_simple_uav/scenes/simple_uav_scene" last_update="0">
+        <properties>
+            <DiscreteReasoner name="Associated discreate reasoners" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
+            <FrameId name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="20">1 0 0 0 0 215 222 118 62 176 88 70 52 3 0 0 0 109 97 112 </FrameId>
+            <Orientation name="Orientation" state="2" spec_type="8" array_size="4" ash="36342608889142651" payload_length="72">4 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 240 63 </Orientation>
+            <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 0 0 </Position>
+            <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
+            <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
+        </properties>
+    </element>
+    <relation subject="Scene-0" predicate="contain" object="Location-1" />
+    <relation subject="Scene-0" predicate="contain" object="Robot-2" />
+    <relation subject="Scene-0" predicate="contain" object="LargeBox-32" />
+    <relation subject="Scene-0" predicate="contain" object="Kit-61" />
+    <relation subject="Scene-0" predicate="contain" object="LargeBox-89" />
+    <element id="1" type="Location" label="unknown_location" last_update="1.47445e+09">
+        <properties />
+    </element>
+    <relation subject="Location-1" predicate="relatedTo" object="Scene-0" />
+    <element id="2" type="Robot" label="uav:simple_uav" last_update="1.47446e+09">
+        <properties>
+            <SkillMgr name="ROS name of the skill manager" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 47 115 105 109 112 108 101 95 117 97 118 </SkillMgr>
+            <hasA name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 117 114 49 48 </hasA>
+            <hasStartLocation name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="33">1 0 0 0 0 215 222 118 62 176 88 70 52 16 0 0 0 117 110 107 110 111 119 110 95 108 111 99 97 116 105 111 110 </hasStartLocation>
+        </properties>
+    </element>
+    <relation subject="Robot-2" predicate="hasA" object="Arm-3" />
+    <relation subject="Robot-2" predicate="robotAt" object="Location-1" />
+    <relation subject="Robot-2" predicate="hasSkill" object="Drive-7" />
+    <relation subject="Robot-2" predicate="hasSkill" object="Drive-75" />
+    <relation subject="Robot-2" predicate="hasSkill" object="Drive-92" />
+    <relation subject="Robot-2" predicate="hasSkill" object="Pick-95" />
+    <relation subject="Robot-2" predicate="hasSkill" object="Place-103" />
+    <relation subject="Robot-2" predicate="hasModule" object="MonitorModule-6" />
+    <relation subject="Robot-2" predicate="relatedTo" object="Scene-0" />
+    <element id="3" type="Arm" label="ur10" last_update="1.47445e+09">
+        <properties>
+            <DriverAddress name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 47 117 114 49 48 </DriverAddress>
+            <MotionExe name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="56">1 0 0 0 0 215 222 118 62 176 88 70 52 39 0 0 0 47 97 114 109 95 99 111 110 116 114 111 108 108 101 114 47 102 111 108 108 111 119 95 106 111 105 110 116 95 116 114 97 106 101 99 116 111 114 121 </MotionExe>
+            <MotionPlanner name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="36">1 0 0 0 0 215 222 118 62 176 88 70 52 19 0 0 0 112 108 97 110 110 101 114 47 112 108 97 110 95 97 99 116 105 111 110 </MotionPlanner>
+            <MoveItGroup name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="20">1 0 0 0 0 215 222 118 62 176 88 70 52 3 0 0 0 97 114 109 </MoveItGroup>
+        </properties>
+    </element>
+    <relation subject="Arm-3" predicate="hasA" object="Camera-4" />
+    <relation subject="Arm-3" predicate="hasA" object="Gripper-5" />
+    <relation subject="Arm-3" predicate="relatedTo" object="Scene-0" />
+    <element id="4" type="Camera" label="arm_camera" last_update="1.47445e+09">
+        <properties>
+            <DepthImageRaw name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 47 119 114 105 115 116 95 99 97 109 101 114 97 47 100 101 112 116 104 95 114 101 103 105 115 116 101 114 101 100 47 105 109 97 103 101 95 114 97 119 </DepthImageRaw>
+            <DriverAddress name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="54">1 0 0 0 0 215 222 118 62 176 88 70 52 37 0 0 0 47 119 114 105 115 116 95 99 97 109 101 114 97 47 100 101 112 116 104 95 114 101 103 105 115 116 101 114 101 100 47 112 111 105 110 116 115 </DriverAddress>
+            <dependsOn name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="36">1 0 0 0 0 215 222 118 62 176 88 70 52 19 0 0 0 120 116 105 111 110 95 99 97 109 101 114 97 95 100 114 105 118 101 114 </dependsOn>
+        </properties>
+    </element>
+    <relation subject="Camera-4" predicate="relatedTo" object="Scene-0" />
+    <element id="5" type="Gripper" label="rq3" last_update="1.47446e+09">
+        <properties>
+            <ContainerState name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 69 109 112 116 121 </ContainerState>
+            <DriverAddress name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 47 103 114 105 112 112 101 114 95 97 115 </DriverAddress>
+            <FrontAxis name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="18">1 0 0 0 0 215 222 118 62 176 88 70 52 1 0 0 0 121 </FrontAxis>
+            <LinkedToFrameId name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 112 97 108 109 </LinkedToFrameId>
+            <dependsOn name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 114 113 51 95 103 114 105 112 112 101 114 95 100 114 105 118 101 114 </dependsOn>
+        </properties>
+    </element>
+    <relation subject="Gripper-5" predicate="relatedTo" object="Scene-0" />
+    <element id="6" type="MonitorModule" label="monitor_battery" last_update="1.47446e+09">
+        <properties>
+            <Robot name="Robot to monitor for battery state" state="2" spec_type="0" array_size="1" ash="1359903344698518304" payload_length="42">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 5 0 0 0 82 111 98 111 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </Robot>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </description>
+            <f name="Frequency" state="2" spec_type="1" array_size="1" ash="36342608889142651" payload_length="21">1 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 36 64 </f>
+            <version name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 48 46 48 46 49 </version>
+        </properties>
+    </element>
+    <relation subject="MonitorModule-6" predicate="relatedTo" object="Scene-0" />
+    <element id="7" type="Drive" label="drive_uav" last_update="1.47446e+09">
+        <properties>
+            <Robot name="Robot to move" state="2" spec_type="2" array_size="1" ash="1359903344698518304" payload_length="42">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 5 0 0 0 65 103 101 110 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </Robot>
+            <TargetLocation name="Target object to drive to" state="2" spec_type="0" array_size="1" ash="1359903344698518304" payload_length="45">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 8 0 0 0 76 111 99 97 116 105 111 110 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </TargetLocation>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="73">1 0 0 0 0 215 222 118 62 176 88 70 52 56 0 0 0 70 97 107 101 32 100 114 105 118 101 46 32 77 111 118 101 32 116 104 101 32 114 111 98 111 116 32 99 108 111 115 101 32 116 111 32 97 32 115 101 108 101 99 116 101 100 32 99 111 110 116 97 105 110 101 114 </description>
+            <version name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 48 46 48 46 49 </version>
+        </properties>
+    </element>
+    <relation subject="Drive-7" predicate="relatedTo" object="Scene-0" />
+    <relation subject="Drive-7" predicate="hasPreCondition" object="uav:Fly-48" />
+    <relation subject="Drive-7" predicate="hasPreCondition" object="uav:LowBattery-64" />
+    <relation subject="Drive-7" predicate="hasPostCondition" object="RobotAtLocation-67" />
+    <element id="8" type="uav:Fly" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="9" type="uav:LowBattery" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="10" type="RobotAtLocation" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="80">1 0 0 0 0 215 222 118 62 176 88 70 52 63 0 0 0 91 82 111 98 111 116 65 116 76 111 99 97 116 105 111 110 93 73 115 32 114 111 98 111 116 32 39 82 111 98 111 116 39 32 97 116 32 108 111 99 97 116 105 111 110 32 39 84 97 114 103 101 116 76 111 99 97 116 105 111 110 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="31">1 0 0 0 0 215 222 118 62 176 88 70 52 14 0 0 0 84 97 114 103 101 116 76 111 99 97 116 105 111 110 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 76 111 99 97 116 105 111 110 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="RobotAtLocation-10" predicate="relatedTo" object="Scene-0" />
+    <element id="11" type="uav:Fly" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="12" type="EmptyHanded" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 69 109 112 116 121 72 97 110 100 101 100 93 73 115 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="EmptyHanded-12" predicate="relatedTo" object="Scene-0" />
+    <element id="13" type="RobotAtLocation" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="75">1 0 0 0 0 215 222 118 62 176 88 70 52 58 0 0 0 91 82 111 98 111 116 65 116 76 111 99 97 116 105 111 110 93 73 115 32 114 111 98 111 116 32 39 82 111 98 111 116 39 32 97 116 32 108 111 99 97 116 105 111 110 32 39 67 111 110 116 97 105 110 101 114 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 67 111 110 116 97 105 110 101 114 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 76 111 99 97 116 105 111 110 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="RobotAtLocation-13" predicate="relatedTo" object="Scene-0" />
+    <element id="14" type="ObjectAtLocation" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="78">1 0 0 0 0 215 222 118 62 176 88 70 52 61 0 0 0 91 79 98 106 101 99 116 65 116 76 111 99 97 116 105 111 110 93 73 115 32 111 98 106 101 99 116 32 39 79 98 106 101 99 116 39 32 97 116 32 108 111 99 97 116 105 111 110 32 39 67 111 110 116 97 105 110 101 114 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="23">1 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 79 98 106 101 99 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 67 111 110 116 97 105 110 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 76 111 99 97 116 105 111 110 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="ObjectAtLocation-14" predicate="relatedTo" object="Scene-0" />
+    <element id="15" type="uav:Fly" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="16" type="uav:LowBattery" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="17" type="EmptyHanded" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 69 109 112 116 121 72 97 110 100 101 100 93 73 115 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="EmptyHanded-17" predicate="relatedTo" object="Scene-0" />
+    <element id="18" type="Holding" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="68">1 0 0 0 0 215 222 118 62 176 88 70 52 51 0 0 0 91 72 111 108 100 105 110 103 93 73 115 32 116 104 101 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 104 111 108 100 105 110 103 32 39 79 98 106 101 99 116 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="23">1 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 79 98 106 101 99 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Holding-18" predicate="relatedTo" object="Scene-0" />
+    <element id="19" type="uav:LowBattery" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="20" type="Holding" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="74">1 0 0 0 0 215 222 118 62 176 88 70 52 57 0 0 0 91 72 111 108 100 105 110 103 93 73 115 32 116 104 101 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 104 111 108 100 105 110 103 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Holding-20" predicate="relatedTo" object="Scene-0" />
+    <element id="21" type="Carrying" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="70">1 0 0 0 0 215 222 118 62 176 88 70 52 53 0 0 0 91 67 97 114 114 121 105 110 103 93 73 115 32 116 104 101 32 114 111 98 111 116 32 39 82 111 98 111 116 39 32 99 97 114 114 121 105 110 103 32 39 80 108 97 99 105 110 103 75 105 116 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 80 108 97 99 105 110 103 75 105 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="20">1 0 0 0 0 215 222 118 62 176 88 70 52 3 0 0 0 75 105 116 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Carrying-21" predicate="relatedTo" object="Scene-0" />
+    <element id="22" type="FitsIn" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 70 105 116 115 73 110 93 68 111 101 115 32 39 39 32 102 105 116 32 105 110 32 39 67 101 108 108 32 45 32 32 73 100 58 32 45 49 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="FitsIn-22" predicate="relatedTo" object="Scene-0" />
+    <element id="23" type="LocationEmpty" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="64">1 0 0 0 0 215 222 118 62 176 88 70 52 47 0 0 0 91 76 111 99 97 116 105 111 110 69 109 112 116 121 93 73 115 32 108 111 99 97 116 105 111 110 32 39 80 108 97 99 105 110 103 67 101 108 108 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="LocationEmpty-23" predicate="relatedTo" object="Scene-0" />
+    <element id="24" type="CellInKit" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="70">1 0 0 0 0 215 222 118 62 176 88 70 52 53 0 0 0 91 67 101 108 108 73 110 75 105 116 93 73 115 32 99 101 108 108 32 39 80 108 97 99 105 110 103 75 105 116 39 32 105 110 32 107 105 116 32 39 80 108 97 99 105 110 103 67 101 108 108 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 80 108 97 99 105 110 103 75 105 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="20">1 0 0 0 0 215 222 118 62 176 88 70 52 3 0 0 0 75 105 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="CellInKit-24" predicate="relatedTo" object="Scene-0" />
+    <element id="25" type="uav:Fly" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="26" type="uav:LowBattery" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="27" type="LocationEmpty" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="64">1 0 0 0 0 215 222 118 62 176 88 70 52 47 0 0 0 91 76 111 99 97 116 105 111 110 69 109 112 116 121 93 73 115 32 108 111 99 97 116 105 111 110 32 39 80 108 97 99 105 110 103 67 101 108 108 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="LocationEmpty-27" predicate="relatedTo" object="Scene-0" />
+    <element id="28" type="EmptyHanded" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 69 109 112 116 121 72 97 110 100 101 100 93 73 115 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="EmptyHanded-28" predicate="relatedTo" object="Scene-0" />
+    <element id="29" type="Holding" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="74">1 0 0 0 0 215 222 118 62 176 88 70 52 57 0 0 0 91 72 111 108 100 105 110 103 93 73 115 32 116 104 101 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 104 111 108 100 105 110 103 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Holding-29" predicate="relatedTo" object="Scene-0" />
+    <element id="30" type="ObjectInCell" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="78">1 0 0 0 0 215 222 118 62 176 88 70 52 61 0 0 0 91 79 98 106 101 99 116 73 110 67 101 108 108 93 73 115 32 111 98 106 101 99 116 32 39 80 108 97 99 105 110 103 67 101 108 108 39 32 105 110 32 99 101 108 108 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="ObjectInCell-30" predicate="relatedTo" object="Scene-0" />
+    <element id="31" type="InKit" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="79">1 0 0 0 0 215 222 118 62 176 88 70 52 62 0 0 0 91 73 110 75 105 116 93 73 115 32 116 104 101 32 112 97 114 116 32 39 80 108 97 99 105 110 103 75 105 116 39 32 105 110 115 105 100 101 32 116 104 101 32 107 105 116 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 80 108 97 99 105 110 103 75 105 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="20">1 0 0 0 0 215 222 118 62 176 88 70 52 3 0 0 0 75 105 116 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="InKit-31" predicate="relatedTo" object="Scene-0" />
+    <element id="32" type="LargeBox" label="large_box_test_compressor" last_update="1.47446e+09">
+        <properties>
+            <nrParts name="" state="2" spec_type="7" array_size="1" ash="36342608889142646" payload_length="17">1 0 0 0 0 118 93 12 5 105 29 129 0 2 0 0 0 </nrParts>
+            <partReference name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 99 111 109 112 114 101 115 115 111 114 </partReference>
+        </properties>
+    </element>
+    <relation subject="LargeBox-32" predicate="relatedTo" object="Scene-0" />
+    <element id="33" type="RobotAtLocation" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="80">1 0 0 0 0 215 222 118 62 176 88 70 52 63 0 0 0 91 82 111 98 111 116 65 116 76 111 99 97 116 105 111 110 93 73 115 32 114 111 98 111 116 32 39 82 111 98 111 116 39 32 97 116 32 108 111 99 97 116 105 111 110 32 39 84 97 114 103 101 116 76 111 99 97 116 105 111 110 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="31">1 0 0 0 0 215 222 118 62 176 88 70 52 14 0 0 0 84 97 114 103 101 116 76 111 99 97 116 105 111 110 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 76 111 99 97 116 105 111 110 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="RobotAtLocation-33" predicate="relatedTo" object="Scene-0" />
+    <element id="34" type="uav:Fly" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="35" type="uav:LowBattery" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="36" type="uav:Fly" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="37" type="uav:LowBattery" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="38" type="uav:LowBattery" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="39" type="uav:Fly" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="40" type="RobotAtLocation" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="80">1 0 0 0 0 215 222 118 62 176 88 70 52 63 0 0 0 91 82 111 98 111 116 65 116 76 111 99 97 116 105 111 110 93 73 115 32 114 111 98 111 116 32 39 82 111 98 111 116 39 32 97 116 32 108 111 99 97 116 105 111 110 32 39 84 97 114 103 101 116 76 111 99 97 116 105 111 110 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="31">1 0 0 0 0 215 222 118 62 176 88 70 52 14 0 0 0 84 97 114 103 101 116 76 111 99 97 116 105 111 110 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 76 111 99 97 116 105 111 110 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="RobotAtLocation-40" predicate="relatedTo" object="Scene-0" />
+    <element id="41" type="EmptyHanded" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 69 109 112 116 121 72 97 110 100 101 100 93 73 115 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="EmptyHanded-41" predicate="relatedTo" object="Scene-0" />
+    <element id="42" type="RobotAtLocation" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="75">1 0 0 0 0 215 222 118 62 176 88 70 52 58 0 0 0 91 82 111 98 111 116 65 116 76 111 99 97 116 105 111 110 93 73 115 32 114 111 98 111 116 32 39 82 111 98 111 116 39 32 97 116 32 108 111 99 97 116 105 111 110 32 39 67 111 110 116 97 105 110 101 114 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 67 111 110 116 97 105 110 101 114 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 76 111 99 97 116 105 111 110 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="RobotAtLocation-42" predicate="relatedTo" object="Scene-0" />
+    <element id="43" type="ObjectAtLocation" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="78">1 0 0 0 0 215 222 118 62 176 88 70 52 61 0 0 0 91 79 98 106 101 99 116 65 116 76 111 99 97 116 105 111 110 93 73 115 32 111 98 106 101 99 116 32 39 79 98 106 101 99 116 39 32 97 116 32 108 111 99 97 116 105 111 110 32 39 67 111 110 116 97 105 110 101 114 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="23">1 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 79 98 106 101 99 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 67 111 110 116 97 105 110 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 76 111 99 97 116 105 111 110 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="ObjectAtLocation-43" predicate="relatedTo" object="Scene-0" />
+    <element id="44" type="uav:Fly" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="45" type="uav:LowBattery" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="46" type="EmptyHanded" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 69 109 112 116 121 72 97 110 100 101 100 93 73 115 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="EmptyHanded-46" predicate="relatedTo" object="Scene-0" />
+    <element id="47" type="Holding" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="68">1 0 0 0 0 215 222 118 62 176 88 70 52 51 0 0 0 91 72 111 108 100 105 110 103 93 73 115 32 116 104 101 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 104 111 108 100 105 110 103 32 39 79 98 106 101 99 116 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="23">1 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 79 98 106 101 99 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Holding-47" predicate="relatedTo" object="Scene-0" />
+    <element id="48" type="uav:Fly" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="uav:Fly-48" predicate="relatedTo" object="Scene-0" />
+    <element id="49" type="Holding" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="74">1 0 0 0 0 215 222 118 62 176 88 70 52 57 0 0 0 91 72 111 108 100 105 110 103 93 73 115 32 116 104 101 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 104 111 108 100 105 110 103 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Holding-49" predicate="relatedTo" object="Scene-0" />
+    <element id="50" type="Carrying" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="70">1 0 0 0 0 215 222 118 62 176 88 70 52 53 0 0 0 91 67 97 114 114 121 105 110 103 93 73 115 32 116 104 101 32 114 111 98 111 116 32 39 82 111 98 111 116 39 32 99 97 114 114 121 105 110 103 32 39 80 108 97 99 105 110 103 75 105 116 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 80 108 97 99 105 110 103 75 105 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="20">1 0 0 0 0 215 222 118 62 176 88 70 52 3 0 0 0 75 105 116 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Carrying-50" predicate="relatedTo" object="Scene-0" />
+    <element id="51" type="FitsIn" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 70 105 116 115 73 110 93 68 111 101 115 32 39 39 32 102 105 116 32 105 110 32 39 67 101 108 108 32 45 32 32 73 100 58 32 45 49 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="FitsIn-51" predicate="relatedTo" object="Scene-0" />
+    <element id="52" type="LocationEmpty" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="64">1 0 0 0 0 215 222 118 62 176 88 70 52 47 0 0 0 91 76 111 99 97 116 105 111 110 69 109 112 116 121 93 73 115 32 108 111 99 97 116 105 111 110 32 39 80 108 97 99 105 110 103 67 101 108 108 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="LocationEmpty-52" predicate="relatedTo" object="Scene-0" />
+    <element id="53" type="CellInKit" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="70">1 0 0 0 0 215 222 118 62 176 88 70 52 53 0 0 0 91 67 101 108 108 73 110 75 105 116 93 73 115 32 99 101 108 108 32 39 80 108 97 99 105 110 103 75 105 116 39 32 105 110 32 107 105 116 32 39 80 108 97 99 105 110 103 67 101 108 108 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 80 108 97 99 105 110 103 75 105 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="20">1 0 0 0 0 215 222 118 62 176 88 70 52 3 0 0 0 75 105 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="CellInKit-53" predicate="relatedTo" object="Scene-0" />
+    <element id="54" type="uav:Fly" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="55" type="uav:LowBattery" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="56" type="LocationEmpty" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="64">1 0 0 0 0 215 222 118 62 176 88 70 52 47 0 0 0 91 76 111 99 97 116 105 111 110 69 109 112 116 121 93 73 115 32 108 111 99 97 116 105 111 110 32 39 80 108 97 99 105 110 103 67 101 108 108 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="LocationEmpty-56" predicate="relatedTo" object="Scene-0" />
+    <element id="57" type="EmptyHanded" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 69 109 112 116 121 72 97 110 100 101 100 93 73 115 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="EmptyHanded-57" predicate="relatedTo" object="Scene-0" />
+    <element id="58" type="Holding" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="74">1 0 0 0 0 215 222 118 62 176 88 70 52 57 0 0 0 91 72 111 108 100 105 110 103 93 73 115 32 116 104 101 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 104 111 108 100 105 110 103 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Holding-58" predicate="relatedTo" object="Scene-0" />
+    <element id="59" type="ObjectInCell" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="78">1 0 0 0 0 215 222 118 62 176 88 70 52 61 0 0 0 91 79 98 106 101 99 116 73 110 67 101 108 108 93 73 115 32 111 98 106 101 99 116 32 39 80 108 97 99 105 110 103 67 101 108 108 39 32 105 110 32 99 101 108 108 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="ObjectInCell-59" predicate="relatedTo" object="Scene-0" />
+    <element id="60" type="InKit" label="" last_update="1.47445e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="79">1 0 0 0 0 215 222 118 62 176 88 70 52 62 0 0 0 91 73 110 75 105 116 93 73 115 32 116 104 101 32 112 97 114 116 32 39 80 108 97 99 105 110 103 75 105 116 39 32 105 110 115 105 100 101 32 116 104 101 32 107 105 116 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 80 108 97 99 105 110 103 75 105 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="20">1 0 0 0 0 215 222 118 62 176 88 70 52 3 0 0 0 75 105 116 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="InKit-60" predicate="relatedTo" object="Scene-0" />
+    <element id="61" type="Kit" label="kitting_box_fixed" last_update="1.47445e+09">
+        <properties>
+            <BaseFrameId name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="20">1 0 0 0 0 215 222 118 62 176 88 70 52 3 0 0 0 109 97 112 </BaseFrameId>
+            <DiscreteReasoner name="Associated discreate reasoners" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
+            <FrameId name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="23">1 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 75 105 116 45 54 49 </FrameId>
+            <Orientation name="Orientation" state="2" spec_type="8" array_size="4" ash="36342608889142651" payload_length="72">4 0 0 0 0 123 93 12 5 105 29 129 0 187 220 154 83 77 57 116 63 0 123 93 12 5 105 29 129 0 146 122 79 229 180 167 132 63 0 123 93 12 5 105 29 129 0 229 181 241 171 98 191 113 191 0 123 93 12 5 105 29 129 0 64 137 207 157 96 255 239 63 </Orientation>
+            <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 236 81 184 30 133 235 193 63 0 123 93 12 5 105 29 129 0 84 227 165 155 196 32 232 63 0 123 93 12 5 105 29 129 0 205 204 204 204 204 204 224 191 </Position>
+            <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
+            <Size name="Size" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 224 63 0 123 93 12 5 105 29 129 0 102 102 102 102 102 102 230 63 0 123 93 12 5 105 29 129 0 205 204 204 204 204 204 204 63 </Size>
+            <hasA name="" state="2" spec_type="7" array_size="7" ash="3766795652327464663" payload_length="137">7 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 97 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 98 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 99 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 100 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 101 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 102 0 215 222 118 62 176 88 70 52 6 0 0 0 99 101 108 108 95 103 </hasA>
+        </properties>
+    </element>
+    <relation subject="Kit-61" predicate="contain" object="CellA-87" />
+    <relation subject="Kit-61" predicate="contain" object="CellB-88" />
+    <relation subject="Kit-61" predicate="relatedTo" object="Scene-0" />
+    <element id="62" type="uav:LowBattery" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="63" type="uav:Fly" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="64" type="uav:LowBattery" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="uav:LowBattery-64" predicate="relatedTo" object="Scene-0" />
+    <element id="65" type="uav:LowBattery" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="66" type="uav:Fly" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="67" type="RobotAtLocation" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="80">1 0 0 0 0 215 222 118 62 176 88 70 52 63 0 0 0 91 82 111 98 111 116 65 116 76 111 99 97 116 105 111 110 93 73 115 32 114 111 98 111 116 32 39 82 111 98 111 116 39 32 97 116 32 108 111 99 97 116 105 111 110 32 39 84 97 114 103 101 116 76 111 99 97 116 105 111 110 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="31">1 0 0 0 0 215 222 118 62 176 88 70 52 14 0 0 0 84 97 114 103 101 116 76 111 99 97 116 105 111 110 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 76 111 99 97 116 105 111 110 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="RobotAtLocation-67" predicate="relatedTo" object="Scene-0" />
+    <element id="68" type="EmptyHanded" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 69 109 112 116 121 72 97 110 100 101 100 93 73 115 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="EmptyHanded-68" predicate="relatedTo" object="Scene-0" />
+    <element id="69" type="RobotAtLocation" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="75">1 0 0 0 0 215 222 118 62 176 88 70 52 58 0 0 0 91 82 111 98 111 116 65 116 76 111 99 97 116 105 111 110 93 73 115 32 114 111 98 111 116 32 39 82 111 98 111 116 39 32 97 116 32 108 111 99 97 116 105 111 110 32 39 67 111 110 116 97 105 110 101 114 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 67 111 110 116 97 105 110 101 114 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 76 111 99 97 116 105 111 110 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="RobotAtLocation-69" predicate="relatedTo" object="Scene-0" />
+    <element id="70" type="ObjectAtLocation" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="78">1 0 0 0 0 215 222 118 62 176 88 70 52 61 0 0 0 91 79 98 106 101 99 116 65 116 76 111 99 97 116 105 111 110 93 73 115 32 111 98 106 101 99 116 32 39 79 98 106 101 99 116 39 32 97 116 32 108 111 99 97 116 105 111 110 32 39 67 111 110 116 97 105 110 101 114 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="23">1 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 79 98 106 101 99 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 67 111 110 116 97 105 110 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 76 111 99 97 116 105 111 110 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="ObjectAtLocation-70" predicate="relatedTo" object="Scene-0" />
+    <element id="71" type="uav:Fly" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="72" type="uav:LowBattery" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="73" type="EmptyHanded" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 69 109 112 116 121 72 97 110 100 101 100 93 73 115 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="EmptyHanded-73" predicate="relatedTo" object="Scene-0" />
+    <element id="74" type="Holding" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="68">1 0 0 0 0 215 222 118 62 176 88 70 52 51 0 0 0 91 72 111 108 100 105 110 103 93 73 115 32 116 104 101 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 104 111 108 100 105 110 103 32 39 79 98 106 101 99 116 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="23">1 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 79 98 106 101 99 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Holding-74" predicate="relatedTo" object="Scene-0" />
+    <element id="75" type="Drive" label="fly_altitude" last_update="1.47446e+09">
+        <properties>
+            <Altitude name="Meters of altitude to reach" state="2" spec_type="1" array_size="1" ash="36342608889142651" payload_length="21">1 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 240 63 </Altitude>
+            <Robot name="Robot to control" state="2" spec_type="0" array_size="1" ash="1359903344698518304" payload_length="42">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 5 0 0 0 82 111 98 111 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </Robot>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </description>
+            <version name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 48 46 48 46 49 </version>
+        </properties>
+    </element>
+    <relation subject="Drive-75" predicate="relatedTo" object="Scene-0" />
+    <relation subject="Drive-75" predicate="hasPreCondition" object="uav:LowBattery-90" />
+    <relation subject="Drive-75" predicate="hasPostCondition" object="uav:Fly-91" />
+    <element id="76" type="Holding" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="74">1 0 0 0 0 215 222 118 62 176 88 70 52 57 0 0 0 91 72 111 108 100 105 110 103 93 73 115 32 116 104 101 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 104 111 108 100 105 110 103 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Holding-76" predicate="relatedTo" object="Scene-0" />
+    <element id="77" type="FitsIn" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 70 105 116 115 73 110 93 68 111 101 115 32 39 39 32 102 105 116 32 105 110 32 39 67 101 108 108 32 45 32 32 73 100 58 32 45 49 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="FitsIn-77" predicate="relatedTo" object="Scene-0" />
+    <element id="78" type="LocationEmpty" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="64">1 0 0 0 0 215 222 118 62 176 88 70 52 47 0 0 0 91 76 111 99 97 116 105 111 110 69 109 112 116 121 93 73 115 32 108 111 99 97 116 105 111 110 32 39 80 108 97 99 105 110 103 67 101 108 108 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="LocationEmpty-78" predicate="relatedTo" object="Scene-0" />
+    <element id="79" type="CellInKit" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="70">1 0 0 0 0 215 222 118 62 176 88 70 52 53 0 0 0 91 67 101 108 108 73 110 75 105 116 93 73 115 32 99 101 108 108 32 39 80 108 97 99 105 110 103 75 105 116 39 32 105 110 32 107 105 116 32 39 80 108 97 99 105 110 103 67 101 108 108 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 80 108 97 99 105 110 103 75 105 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="20">1 0 0 0 0 215 222 118 62 176 88 70 52 3 0 0 0 75 105 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="CellInKit-79" predicate="relatedTo" object="Scene-0" />
+    <element id="80" type="uav:Fly" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="81" type="uav:LowBattery" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <element id="82" type="LocationEmpty" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="64">1 0 0 0 0 215 222 118 62 176 88 70 52 47 0 0 0 91 76 111 99 97 116 105 111 110 69 109 112 116 121 93 73 115 32 108 111 99 97 116 105 111 110 32 39 80 108 97 99 105 110 103 67 101 108 108 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="LocationEmpty-82" predicate="relatedTo" object="Scene-0" />
+    <element id="83" type="EmptyHanded" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 69 109 112 116 121 72 97 110 100 101 100 93 73 115 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="EmptyHanded-83" predicate="relatedTo" object="Scene-0" />
+    <element id="84" type="Holding" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="74">1 0 0 0 0 215 222 118 62 176 88 70 52 57 0 0 0 91 72 111 108 100 105 110 103 93 73 115 32 116 104 101 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 104 111 108 100 105 110 103 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Holding-84" predicate="relatedTo" object="Scene-0" />
+    <element id="85" type="ObjectInCell" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="78">1 0 0 0 0 215 222 118 62 176 88 70 52 61 0 0 0 91 79 98 106 101 99 116 73 110 67 101 108 108 93 73 115 32 111 98 106 101 99 116 32 39 80 108 97 99 105 110 103 67 101 108 108 39 32 105 110 32 99 101 108 108 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="ObjectInCell-85" predicate="relatedTo" object="Scene-0" />
+    <element id="86" type="InKit" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="79">1 0 0 0 0 215 222 118 62 176 88 70 52 62 0 0 0 91 73 110 75 105 116 93 73 115 32 116 104 101 32 112 97 114 116 32 39 80 108 97 99 105 110 103 75 105 116 39 32 105 110 115 105 100 101 32 116 104 101 32 107 105 116 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 80 108 97 99 105 110 103 75 105 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="20">1 0 0 0 0 215 222 118 62 176 88 70 52 3 0 0 0 75 105 116 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="InKit-86" predicate="relatedTo" object="Scene-0" />
+    <element id="87" type="CellA" label="cell_a" last_update="1.47446e+09">
+        <properties>
+            <BaseFrameId name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="23">1 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 75 105 116 45 54 49 </BaseFrameId>
+            <ContainerState name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 69 109 112 116 121 </ContainerState>
+            <DiscreteReasoner name="Associated discreate reasoners" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
+            <FrameId name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 67 101 108 108 65 45 56 55 </FrameId>
+            <Orientation name="Orientation" state="2" spec_type="8" array_size="4" ash="36342608889142651" payload_length="72">4 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 224 191 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 224 191 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 224 63 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 224 63 </Orientation>
+            <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 123 20 174 71 225 122 196 63 0 123 93 12 5 105 29 129 0 113 61 10 215 163 112 205 191 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
+            <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
+            <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
+            <partReference name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 99 111 109 112 114 101 115 115 111 114 </partReference>
+        </properties>
+    </element>
+    <relation subject="CellA-87" predicate="relatedTo" object="Scene-0" />
+    <element id="88" type="CellB" label="cell_b" last_update="1.47446e+09">
+        <properties>
+            <BaseFrameId name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="23">1 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 75 105 116 45 54 49 </BaseFrameId>
+            <ContainerState name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 69 109 112 116 121 </ContainerState>
+            <DiscreteReasoner name="Associated discreate reasoners" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="35">1 0 0 0 0 215 222 118 62 176 88 70 52 18 0 0 0 65 97 117 83 112 97 116 105 97 108 82 101 97 115 111 110 101 114 </DiscreteReasoner>
+            <FrameId name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 67 101 108 108 66 45 56 56 </FrameId>
+            <Orientation name="Orientation" state="2" spec_type="8" array_size="4" ash="36342608889142651" payload_length="72">4 0 0 0 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 224 191 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 224 191 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 224 63 0 123 93 12 5 105 29 129 0 0 0 0 0 0 0 224 63 </Orientation>
+            <Position name="Position" state="2" spec_type="8" array_size="3" ash="36342608889142651" payload_length="55">3 0 0 0 0 123 93 12 5 105 29 129 0 123 20 174 71 225 122 180 191 0 123 93 12 5 105 29 129 0 113 61 10 215 163 112 205 191 0 123 93 12 5 105 29 129 0 154 153 153 153 153 153 185 63 </Position>
+            <PublishTf name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </PublishTf>
+            <Size name="Size" state="1" spec_type="8" array_size="3" ash="36342608889142651" />
+            <partReference name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 97 108 116 101 114 110 97 116 111 114 </partReference>
+        </properties>
+    </element>
+    <relation subject="CellB-88" predicate="relatedTo" object="Scene-0" />
+    <element id="89" type="LargeBox" label="large_box_test_alternator" last_update="1.47446e+09">
+        <properties>
+            <nrParts name="" state="2" spec_type="7" array_size="1" ash="36342608889142646" payload_length="17">1 0 0 0 0 118 93 12 5 105 29 129 0 2 0 0 0 </nrParts>
+            <partReference name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 97 108 116 101 114 110 97 116 111 114 </partReference>
+        </properties>
+    </element>
+    <relation subject="LargeBox-89" predicate="relatedTo" object="Scene-0" />
+    <element id="90" type="uav:LowBattery" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="uav:LowBattery-90" predicate="relatedTo" object="Scene-0" />
+    <element id="91" type="uav:Fly" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="uav:Fly-91" predicate="relatedTo" object="Scene-0" />
+    <element id="92" type="Drive" label="land" last_update="1.47446e+09">
+        <properties>
+            <Location name="Location to land" state="2" spec_type="4" array_size="1" ash="1359903344698518304" payload_length="45">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 8 0 0 0 76 111 99 97 116 105 111 110 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </Location>
+            <Robot name="Robot to control" state="2" spec_type="0" array_size="1" ash="1359903344698518304" payload_length="42">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 5 0 0 0 82 111 98 111 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </Robot>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </description>
+            <version name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 48 46 48 46 49 </version>
+        </properties>
+    </element>
+    <relation subject="Drive-92" predicate="relatedTo" object="Scene-0" />
+    <relation subject="Drive-92" predicate="hasPostCondition" object="uav:LowBattery-93" />
+    <relation subject="Drive-92" predicate="hasPostCondition" object="uav:Fly-94" />
+    <element id="93" type="uav:LowBattery" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="uav:LowBattery-93" predicate="relatedTo" object="Scene-0" />
+    <element id="94" type="uav:Fly" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="uav:Fly-94" predicate="relatedTo" object="Scene-0" />
+    <element id="95" type="Pick" label="pick_uav" last_update="1.47446e+09">
+        <properties>
+            <Arm name="Arm to use" state="2" spec_type="2" array_size="1" ash="1359903344698518304" payload_length="40">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 3 0 0 0 65 114 109 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </Arm>
+            <Container name="Container to get the object from" state="2" spec_type="0" array_size="1" ash="1359903344698518304" payload_length="45">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 8 0 0 0 76 111 99 97 116 105 111 110 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </Container>
+            <Gripper name="Gripper mounted on the arm" state="2" spec_type="5" array_size="1" ash="1359903344698518304" payload_length="44">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 7 0 0 0 71 114 105 112 112 101 114 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </Gripper>
+            <Object name="The object to grasp" state="2" spec_type="4" array_size="1" ash="1359903344698518304" payload_length="50">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </Object>
+            <Robot name="" state="2" spec_type="5" array_size="1" ash="1359903344698518304" payload_length="42">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 5 0 0 0 65 103 101 110 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </Robot>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </description>
+            <version name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 48 46 48 46 49 </version>
+        </properties>
+    </element>
+    <relation subject="Pick-95" predicate="relatedTo" object="Scene-0" />
+    <relation subject="Pick-95" predicate="hasPreCondition" object="EmptyHanded-96" />
+    <relation subject="Pick-95" predicate="hasPreCondition" object="RobotAtLocation-97" />
+    <relation subject="Pick-95" predicate="hasPreCondition" object="ObjectAtLocation-98" />
+    <relation subject="Pick-95" predicate="hasPreCondition" object="uav:Fly-99" />
+    <relation subject="Pick-95" predicate="hasPreCondition" object="uav:LowBattery-100" />
+    <relation subject="Pick-95" predicate="hasPostCondition" object="EmptyHanded-101" />
+    <relation subject="Pick-95" predicate="hasPostCondition" object="Holding-102" />
+    <element id="96" type="EmptyHanded" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 69 109 112 116 121 72 97 110 100 101 100 93 73 115 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="EmptyHanded-96" predicate="relatedTo" object="Scene-0" />
+    <element id="97" type="RobotAtLocation" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="75">1 0 0 0 0 215 222 118 62 176 88 70 52 58 0 0 0 91 82 111 98 111 116 65 116 76 111 99 97 116 105 111 110 93 73 115 32 114 111 98 111 116 32 39 82 111 98 111 116 39 32 97 116 32 108 111 99 97 116 105 111 110 32 39 67 111 110 116 97 105 110 101 114 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 67 111 110 116 97 105 110 101 114 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 76 111 99 97 116 105 111 110 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="RobotAtLocation-97" predicate="relatedTo" object="Scene-0" />
+    <element id="98" type="ObjectAtLocation" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="78">1 0 0 0 0 215 222 118 62 176 88 70 52 61 0 0 0 91 79 98 106 101 99 116 65 116 76 111 99 97 116 105 111 110 93 73 115 32 111 98 106 101 99 116 32 39 79 98 106 101 99 116 39 32 97 116 32 108 111 99 97 116 105 111 110 32 39 67 111 110 116 97 105 110 101 114 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="23">1 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 79 98 106 101 99 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 67 111 110 116 97 105 110 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="25">1 0 0 0 0 215 222 118 62 176 88 70 52 8 0 0 0 76 111 99 97 116 105 111 110 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="ObjectAtLocation-98" predicate="relatedTo" object="Scene-0" />
+    <element id="99" type="uav:Fly" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="uav:Fly-99" predicate="relatedTo" object="Scene-0" />
+    <element id="100" type="uav:LowBattery" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="uav:LowBattery-100" predicate="relatedTo" object="Scene-0" />
+    <element id="101" type="EmptyHanded" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 69 109 112 116 121 72 97 110 100 101 100 93 73 115 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="EmptyHanded-101" predicate="relatedTo" object="Scene-0" />
+    <element id="102" type="Holding" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="68">1 0 0 0 0 215 222 118 62 176 88 70 52 51 0 0 0 91 72 111 108 100 105 110 103 93 73 115 32 116 104 101 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 104 111 108 100 105 110 103 32 39 79 98 106 101 99 116 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="23">1 0 0 0 0 215 222 118 62 176 88 70 52 6 0 0 0 79 98 106 101 99 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Holding-102" predicate="relatedTo" object="Scene-0" />
+    <element id="103" type="Place" label="place_uav" last_update="1.47446e+09">
+        <properties>
+            <Arm name="Arm to use" state="2" spec_type="2" array_size="1" ash="1359903344698518304" payload_length="40">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 3 0 0 0 65 114 109 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </Arm>
+            <Gripper name="Gripper mounted on the arm" state="2" spec_type="5" array_size="1" ash="1359903344698518304" payload_length="44">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 7 0 0 0 71 114 105 112 112 101 114 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </Gripper>
+            <ObjectInHand name="Object in the gripper" state="2" spec_type="5" array_size="1" ash="1359903344698518304" payload_length="50">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </ObjectInHand>
+            <PlacingCell name="Destination cell" state="2" spec_type="0" array_size="1" ash="1359903344698518304" payload_length="41">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 4 0 0 0 67 101 108 108 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </PlacingCell>
+            <PlacingKit name="Destination kit" state="2" spec_type="5" array_size="1" ash="1359903344698518304" payload_length="40">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 3 0 0 0 75 105 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </PlacingKit>
+            <Robot name="" state="2" spec_type="5" array_size="1" ash="1359903344698518304" payload_length="42">1 0 0 0 0 32 235 158 13 227 88 223 18 255 255 255 255 5 0 0 0 65 103 101 110 116 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 </Robot>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="85">1 0 0 0 0 215 222 118 62 176 88 70 52 68 0 0 0 80 108 97 99 101 32 116 104 101 32 111 98 106 101 99 116 32 102 114 111 109 32 116 104 101 32 115 101 108 101 99 116 101 100 32 103 114 105 112 112 101 114 32 116 111 32 116 104 101 32 115 101 108 101 99 116 101 100 32 108 111 99 97 116 105 111 110 46 </description>
+            <version name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 48 46 48 46 49 </version>
+        </properties>
+    </element>
+    <relation subject="Place-103" predicate="relatedTo" object="Scene-0" />
+    <relation subject="Place-103" predicate="hasPreCondition" object="Holding-104" />
+    <relation subject="Place-103" predicate="hasPreCondition" object="FitsIn-105" />
+    <relation subject="Place-103" predicate="hasPreCondition" object="LocationEmpty-106" />
+    <relation subject="Place-103" predicate="hasPreCondition" object="CellInKit-107" />
+    <relation subject="Place-103" predicate="hasPreCondition" object="uav:Fly-108" />
+    <relation subject="Place-103" predicate="hasPreCondition" object="uav:LowBattery-109" />
+    <relation subject="Place-103" predicate="hasPostCondition" object="LocationEmpty-110" />
+    <relation subject="Place-103" predicate="hasPostCondition" object="EmptyHanded-111" />
+    <relation subject="Place-103" predicate="hasPostCondition" object="Holding-112" />
+    <relation subject="Place-103" predicate="hasPostCondition" object="ObjectInCell-113" />
+    <relation subject="Place-103" predicate="hasPostCondition" object="InKit-114" />
+    <element id="104" type="Holding" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="74">1 0 0 0 0 215 222 118 62 176 88 70 52 57 0 0 0 91 72 111 108 100 105 110 103 93 73 115 32 116 104 101 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 104 111 108 100 105 110 103 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Holding-104" predicate="relatedTo" object="Scene-0" />
+    <element id="105" type="FitsIn" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 70 105 116 115 73 110 93 68 111 101 115 32 39 39 32 102 105 116 32 105 110 32 39 67 101 108 108 32 45 32 32 73 100 58 32 45 49 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="FitsIn-105" predicate="relatedTo" object="Scene-0" />
+    <element id="106" type="LocationEmpty" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="64">1 0 0 0 0 215 222 118 62 176 88 70 52 47 0 0 0 91 76 111 99 97 116 105 111 110 69 109 112 116 121 93 73 115 32 108 111 99 97 116 105 111 110 32 39 80 108 97 99 105 110 103 67 101 108 108 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="LocationEmpty-106" predicate="relatedTo" object="Scene-0" />
+    <element id="107" type="CellInKit" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="70">1 0 0 0 0 215 222 118 62 176 88 70 52 53 0 0 0 91 67 101 108 108 73 110 75 105 116 93 73 115 32 99 101 108 108 32 39 80 108 97 99 105 110 103 75 105 116 39 32 105 110 32 107 105 116 32 39 80 108 97 99 105 110 103 67 101 108 108 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 80 108 97 99 105 110 103 75 105 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="20">1 0 0 0 0 215 222 118 62 176 88 70 52 3 0 0 0 75 105 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="CellInKit-107" predicate="relatedTo" object="Scene-0" />
+    <element id="108" type="uav:Fly" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="41">1 0 0 0 0 215 222 118 62 176 88 70 52 24 0 0 0 91 93 73 115 32 117 97 118 32 39 82 111 98 111 116 39 32 102 108 121 105 110 103 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="uav:Fly-108" predicate="relatedTo" object="Scene-0" />
+    <element id="109" type="uav:LowBattery" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="47">1 0 0 0 0 215 222 118 62 176 88 70 52 30 0 0 0 91 93 72 97 115 32 117 97 118 32 39 82 111 98 111 116 39 32 108 111 119 32 98 97 116 116 101 114 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 82 111 98 111 116 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="22">1 0 0 0 0 215 222 118 62 176 88 70 52 5 0 0 0 65 103 101 110 116 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="uav:LowBattery-109" predicate="relatedTo" object="Scene-0" />
+    <element id="110" type="LocationEmpty" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="64">1 0 0 0 0 215 222 118 62 176 88 70 52 47 0 0 0 91 76 111 99 97 116 105 111 110 69 109 112 116 121 93 73 115 32 108 111 99 97 116 105 111 110 32 39 80 108 97 99 105 110 103 67 101 108 108 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="LocationEmpty-110" predicate="relatedTo" object="Scene-0" />
+    <element id="111" type="EmptyHanded" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="57">1 0 0 0 0 215 222 118 62 176 88 70 52 40 0 0 0 91 69 109 112 116 121 72 97 110 100 101 100 93 73 115 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 101 109 112 116 121 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="17">1 0 0 0 0 215 222 118 62 176 88 70 52 0 0 0 0 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="26">1 0 0 0 0 215 222 118 62 176 88 70 52 9 0 0 0 85 110 100 101 102 105 110 101 100 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="EmptyHanded-111" predicate="relatedTo" object="Scene-0" />
+    <element id="112" type="Holding" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="74">1 0 0 0 0 215 222 118 62 176 88 70 52 57 0 0 0 91 72 111 108 100 105 110 103 93 73 115 32 116 104 101 32 103 114 105 112 112 101 114 32 39 71 114 105 112 112 101 114 39 32 104 111 108 100 105 110 103 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 0 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="24">1 0 0 0 0 215 222 118 62 176 88 70 52 7 0 0 0 71 114 105 112 112 101 114 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="Holding-112" predicate="relatedTo" object="Scene-0" />
+    <element id="113" type="ObjectInCell" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="78">1 0 0 0 0 215 222 118 62 176 88 70 52 61 0 0 0 91 79 98 106 101 99 116 73 110 67 101 108 108 93 73 115 32 111 98 106 101 99 116 32 39 80 108 97 99 105 110 103 67 101 108 108 39 32 105 110 32 99 101 108 108 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="28">1 0 0 0 0 215 222 118 62 176 88 70 52 11 0 0 0 80 108 97 99 105 110 103 67 101 108 108 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="21">1 0 0 0 0 215 222 118 62 176 88 70 52 4 0 0 0 67 101 108 108 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="ObjectInCell-113" predicate="relatedTo" object="Scene-0" />
+    <element id="114" type="InKit" label="" last_update="1.47446e+09">
+        <properties>
+            <allowsAbstractTypes name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </allowsAbstractTypes>
+            <description name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="79">1 0 0 0 0 215 222 118 62 176 88 70 52 62 0 0 0 91 73 110 75 105 116 93 73 115 32 116 104 101 32 112 97 114 116 32 39 80 108 97 99 105 110 103 75 105 116 39 32 105 110 115 105 100 101 32 116 104 101 32 107 105 116 32 39 79 98 106 101 99 116 73 110 72 97 110 100 39 63 </description>
+            <hasDesiredState name="" state="2" spec_type="7" array_size="1" ash="36342608889142653" payload_length="14">1 0 0 0 0 125 93 12 5 105 29 129 0 1 </hasDesiredState>
+            <hasObject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="27">1 0 0 0 0 215 222 118 62 176 88 70 52 10 0 0 0 80 108 97 99 105 110 103 75 105 116 </hasObject>
+            <hasObjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="20">1 0 0 0 0 215 222 118 62 176 88 70 52 3 0 0 0 75 105 116 </hasObjectType>
+            <hasSubject name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="29">1 0 0 0 0 215 222 118 62 176 88 70 52 12 0 0 0 79 98 106 101 99 116 73 110 72 97 110 100 </hasSubject>
+            <hasSubjectType name="" state="2" spec_type="7" array_size="1" ash="3766795652327464663" payload_length="30">1 0 0 0 0 215 222 118 62 176 88 70 52 13 0 0 0 77 97 110 105 112 117 108 97 116 97 98 108 101 </hasSubjectType>
+        </properties>
+    </element>
+    <relation subject="InKit-114" predicate="relatedTo" object="Scene-0" />
+</world_state>

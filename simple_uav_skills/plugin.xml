@@ -1,0 +1,27 @@
+<library path="libsimple_uav_skills">
+    <class  name="drive_uav" type="skiros_skill::DriveUav" base_class_type="skiros_skill::SkillBase">
+      <description>
+      Fake driving skill
+      </description>
+    </class>
+    <class name="pick_uav" type="skiros_skill::PickUav" base_class_type="skiros_skill::SkillBase">
+      <description>
+      Fake picking skill
+      </description>
+    </class>
+    <class name="place_uav" type="skiros_skill::PlaceUav" base_class_type="skiros_skill::SkillBase">
+      <description>
+      Fake placing skill
+      </description>
+    </class>
+    <class name="fly_altitude" type="skiros_skill::FlyAltitude" base_class_type="skiros_skill::SkillBase">
+      <description>
+      Fake flying skill
+      </description>
+    </class>
+    <class name="land" type="skiros_skill::Land" base_class_type="skiros_skill::SkillBase">
+      <description>
+      Fake flying skill
+      </description>
+    </class>
+</library>
