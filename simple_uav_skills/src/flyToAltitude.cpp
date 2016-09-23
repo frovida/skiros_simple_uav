@@ -37,7 +37,7 @@ public:
                                                   skiros_common::online);
         getParamHandle()->addParamWithDefaultValue("Altitude",
                                                   1.0,
-                                                  "Meters of altitude to reach",
+                                                  "Altitude to reach (meters)",
                                                   skiros_common::offline);
     }
     ~FlyAltitude(){}
