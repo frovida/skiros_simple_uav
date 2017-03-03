@@ -15,8 +15,7 @@
 		<arg name="scene_name" default="$(arg scene_name)"/>
 		<arg name="workspace_folder" value="$(arg workspace_folder)"/>
   </include>
-
-	<include file="$(find skiros)/launch/skiros_skill_mgr.launch">
+  <include file="$(find skiros)/launch/skiros_skill_mgr.launch">
 		<arg name="debug" value="$(arg debug)"/>
 		<arg name="save_log" value="$(arg save_log)"/>
 		<arg name="robot_prefix" value="$(arg robot_prefix)"/>
